@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body style="padding-top: 20%;">
+
+
+
+<script>
+function myFunction() {
+  var d = new Date();
+  var n = d.getDate();
+  document.getElementById("demo").innerHTML = n;
+  if(n % 2 == 0){
+  	document.getElementById("demo").innerHTML = "Even";
+  }
+  else{
+  	document.getElementById("demo").innerHTML = "<p style='color:red;'>Hurray , The date is an odd number..!!</p>"
+  }
+}
+
+</script>
+
+
+
+
+<div style="font-size: 30px;">
+
+<center > Checking the date is Even or Not?</center>
+
+</div>
+<br>
+
+<center><button onclick="myFunction()" style="background-color: black; color: white; width: 10%;">Get Date..</button></center>
+<center ><p  id="demo"></p></center>
+
+</body>
+</html>
